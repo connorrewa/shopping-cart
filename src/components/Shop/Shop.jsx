@@ -1,5 +1,11 @@
+import Navbar from '../Navbar/Navbar';
 const Shop = () => {
-    return <h1>Shop</h1>;
+    return (
+        <div>
+            <Navbar />
+            <h1>Shop</h1>
+        </div>
+    );
 };
 
 export default Shop;

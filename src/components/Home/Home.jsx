@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
+
 const Home = () => {
     return (
         <>
+            <Navbar />
             <h1>Home</h1>
-            <Link to='/shop'>Click here to shop</Link>
         </>
     );
 };
