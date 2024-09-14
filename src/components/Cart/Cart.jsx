@@ -58,7 +58,7 @@ const Cart = ({ cart, setCart, cartIsOpen, setCartIsOpen }) => {
                     }`}
                 >
                     <div className={style.title}>
-                        <h2>Cart</h2>
+                        <h2 className={style.h2Title}>Cart</h2>
                         <button
                             className={style.closeButton}
                             onClick={() => handleClose()}

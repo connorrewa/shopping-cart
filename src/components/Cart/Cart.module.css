@@ -48,6 +48,7 @@
 .title {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -77,6 +78,9 @@
     align-items: flex-start;
 }
 
+.h2Title {
+    font-size: 34px;
+}
 .itemTitle {
     font-size: 14px;
 }
@@ -112,5 +116,16 @@
 @media (max-width: 800px) {
     .sidebar {
         max-width: 80%;
+    }
+
+    .imageContainer {
+        width: 100px;
+        height: 80px;
+    }
+
+    .productImage {
+        width: 90px;
+        height: 70px;
+        object-fit: contain;
     }
 }
