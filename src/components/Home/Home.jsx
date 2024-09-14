@@ -1,21 +1,23 @@
 import { Link } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
-import styles from './Home.module.css';
+import style from './Home.module.css';
+import { useOutletContext } from 'react-router-dom';
 
 const Home = () => {
+    const [cart, setCart, setCartIsOpen] = useOutletContext();
     return (
-        <>
-            <Navbar />
-            <div className='container'>
-                <div className='content'>
-                    <h2>Lema</h2>
-                    <p>
-                        The marketplace with the best deals <span>for you</span>
-                    </p>
-                </div>
-                <Link to='/shop'>Shop Now</Link>
+        <div className={style.container}>
+            <div className={style.content}>
+                <h1 className={style.centerTitle}>Lima</h1>
+                <p className={style.description}>
+                    The marketplace with the best deals{' '}
+                    <span className={style.forYou}>for you</span>
+                </p>
+
+                <Link className={style.link} to='/shop'>
+                    Shop Now
+                </Link>
             </div>
-        </>
+        </div>
     );
 };
 

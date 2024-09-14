@@ -1,1 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.forYou {
+    color: indianred;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 20px;
+    text-align: center;
+}
+
+.link {
+    border: 2px solid indianred;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.centerTitle {
+    font-size: 7rem;
+}

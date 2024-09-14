@@ -1,0 +1,116 @@
+.wrapper {
+    background-color: #00000030;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+
+    display: none;
+
+    justify-content: flex-end;
+
+    z-index: 1000;
+
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.visible {
+    display: flex;
+}
+
+.sidebar {
+    align-items: center;
+    background-color: indianred;
+    display: flex;
+
+    max-width: 50%;
+    width: 500px;
+
+    transition: margin-right 300ms ease;
+
+    margin-right: -400px;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+    overflow-y: scroll;
+    box-shadow: inset;
+}
+
+.closeButton {
+    padding: 6px;
+    display: flex;
+    align-content: center;
+    border-radius: 30%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.opened {
+    margin-right: 0;
+}
+
+.productImage {
+    width: 130px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.cartItems {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+    width: 100%;
+}
+
+.cartItem {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.itemTitle {
+    font-size: 14px;
+}
+
+.addSubtractButton {
+    background: none;
+}
+
+.addSubtractButton:hover {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.checkout {
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.imageContainer {
+    width: 150px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.952);
+    border-radius: 1rem;
+    padding: 6px;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        max-width: 80%;
+    }
+}

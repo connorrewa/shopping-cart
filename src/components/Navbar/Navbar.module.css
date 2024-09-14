@@ -1,7 +1,15 @@
 .container {
     display: flex;
-    padding: 2rem;
-    gap: 2rem;
+    gap: 2.5rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-block: 0.5rem;
+}
+
+.wrapper {
+    position: sticky;
+    top: 0;
+    background-color: #242424;
 }
 
 .link {
@@ -10,4 +18,14 @@
 
 .title {
     margin: 0 auto 0 0;
+}
+
+#cartButton {
+    background: none;
+}
+
+#cartButton:hover {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    color: rgba(255, 255, 255, 0.767);
 }
