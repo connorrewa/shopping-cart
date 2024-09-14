@@ -60,7 +60,7 @@
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1550px) {
     .grid {
         grid-template-columns: repeat(4, 1fr);
     }
